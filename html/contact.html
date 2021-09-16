@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css"> <!--link our css-->
+    <script src = "../js/validation.js"></script> <!--link our javascript-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--internal css-->
+    <style type="text/css">
+        * { margin: 0; padding: 0; }
+
+        input, textarea {
+        width: calc(100% - 18px);
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #1c87c9;
+        outline: none;
+        }
+        
+        input::placeholder {
+        color: #666;
+        }
+        
+        button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: indianred; 
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        }
+        h2{
+            padding-bottom: 70px;
+            font-size: 25px;
+            text-align: center;
+        }
+     </style>
+    <title>Contact Me</title>
+</head>
+<body>
+    <div class="leftCol">
+        <div id="about-img">
+            <img src="../img/contactme.png" alt="img">
+        </div>
+        <header style="text-align: center;">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="rightCol">
+        <div class="details">
+                <form name="messageForm" onsubmit="order()">
+                    <div class="form">
+                        <div style="text-transform: uppercase">
+                            <h2>Get in Touch</h2>
+                        </div>
+                        <ul>
+                            <p>First Name: <br><input type="text" name="firstname" placeholder="Ram"><br></p>
+                            <p>Last Name: <br><input type="text" name="lastname" placeholder="Kumar"></p>
+                            <p>Email: <br><input type="email" name="email" placeholder="coolram@gmail.com"></p>
+                            <p>Comment: <textarea type="text" name="message" rows="10" cols="30" placeholder="Any other Messages. Write here ..."></textarea></p>
+                            <p><button type="submit">Submit</button></p>
+                        </ul>
+                    </div>
+                </form>
+        </div>
+    </div>
+</body>
+</html>
